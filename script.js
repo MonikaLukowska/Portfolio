@@ -1,6 +1,9 @@
 $(".header-top-burger").on("click", function () {
     $(".fas, aside").toggleClass("show");
 })
+$(".header-top-nav-mobile a").on("click", function () {
+    $(".fas, aside").toggleClass("show");
+});
 
 $('.img1').on('click', function () {
     console.log('dziala');
