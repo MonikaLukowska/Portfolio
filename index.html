@@ -16,193 +16,236 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="manifest" href="img/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
-  <header id="home">
+  <header>
     <div class="header-top-container">
-      <div class="header-top">
-        <div class="header-top-logo">
-          <a href="#home"><img src="img/logo_frona.png" alt=""></a>
-        </div>
-        <div class="header-top-burger">
-          <i class="fas fa-bars show "></i>
-          <i class="fas fa-times"></i>
-        </div>
-        <aside>
-          <nav class="header-top-nav-mobile">
+      <div class="wrapper--header">
+        <div class="header-top">
+          <div class="header-top-logo">
+            <img src="img/logo_frona.png" alt="">
+          </div>
+          <div class="header-top-burger">
+            <i class="fas fa-bars show "></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <aside>
+            <nav class="header-top-nav-mobile">
+              <ul class="navi">
+                <li><a href="#services">usługi</a></li>
+                <li><a href="#work">portfolio</a></li>
+                <li><a href="#process">proces</a></li>
+                <li><a href="#about">o mnie</a></li>
+                <li><a href="#contact">kontakt</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <nav class="header-top-nav">
             <ul>
-              <li><a href="#services">usługi</a></li>
-              <li><a href="#work">portfolio</a></li>
-              <li><a href="#about">o mnie</a></li>
-              <li><a href="#contact">kontakt</a></li>
+              <li class="header-top-nav_item"><a href="#services">zakres</a></li>
+              <li class="header-top-nav_item"><a href="#work">portfolio</a></li>
+              <li class="header-top-nav_item"><a href="#process">proces</a></li>
+              <li class="header-top-nav_item"><a href="#about">o mnie</a></li>
+              <li class="header-top-nav_item"><a href="#contact">kontakt</a></li>
             </ul>
           </nav>
-        </aside>
-
-        <nav class="header-top-nav">
-          <ul>
-            <li><a href="#services">zakres</a></li>
-            <li><a href="#work">portfolio</a></li>
-            <li><a href="#about">o mnie</a></li>
-            <li><a href="#contact">kontakt</a></li>
-          </ul>
-        </nav>
+        </div>
       </div>
     </div>
     <div class="header-bottom">
-      <div class="header-bottom-content">
-        <h1 class="header-bottom-title">Jaka będzie Twoja strona www?</h1>
-        <div class="header-bottom-flex">
-          <div class="header-bottom-wrap">
-            <ul class="header-bottom-features">
-              <li>funkcjonalna</li>
-              <li>responsywna</li>
-              <li>optymalna</li>
-              <li>nowoczesna</li>
-              <li>atrakcyjna wizualnie</li>
-            </ul>
-            <a class="header-bottom-btn" href="#contact">Wycena</a>
-          </div>
+      <div class="wrapper">
+        <div class="header-bottom-content">
+          <h1 class="header-bottom-title">
+            <span class="title"></span><span class="cursor">|</span>
+          </h1>
           <div class="header-bottom-mobile">
             <div class="mobile-outside">
               <div class="mobile-inner"></div>
               <div class="mobile-speaker"></div>
               <div class="mobile-microphone"></div>
-              <div class="header-bottom-circle">
-                <span>
-                  <<i class="fas fa-heart"></i>>
-                </span>
+              <div class="header-bottom-triangle">
               </div>
             </div>
           </div>
+          <div class="header-bottom-flex">
+            <div class="header-bottom-wrap">
+              <ul class="header-bottom-features">
+                <li class="header-bottom-feature">funkcjonalna</li>
+                <li class="header-bottom-feature">responsywna</li>
+                <li class="header-bottom-feature">optymalna</li>
+                <li class="header-bottom-feature">nowoczesna</li>
+                <li class="header-bottom-feature">atrakcyjna wizualnie</li>
+              </ul>
+              <a class="header-bottom-btn" href="#contact">Wycena</a>
+            </div>
+
+          </div>
+
         </div>
-
       </div>
-
     </div>
   </header>
   <main>
     <section id="services" class="services">
-      <div class="services-separator"></div>
-      <h2 class="services-title">zakres</h2>
-      <div class="services-content">
-        <div class="services-type">
-          <div class="services-type-icon"><img src="img/html-css-js-black.png" alt="znak kodu html css JavaScript">
+      <h2 data-aos="fade" class="services-title">zakres</h2>
+      <div data-aos="fade-right" class="services-separator"></div>
+
+      <div class="wrapper">
+        <div class="services-content">
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500" class="services-type">
+            <div class="services-type-icon"><img src="img/html-css-js-black.png" alt="znak kodu html css JavaScript">
+            </div>
+            <h3>Web design</h3>
+            <p>Tworzę responsywne (reagujące na rozmiar wyświetlacza) strony www przy użyciu HTML, CSS oraz JavaScript.
+              Dbam o ich nowoczesny i atrakcyjny design, zapewniając jednocześnie
+              odpowiedni UX (strony przyjazde dla użytkownika) oraz optymalizację pod kątem SEO.
+            </p>
           </div>
-          <h3>Web design</h3>
-          <p>Tworzę responsywne (reagujące na rozmiar wyświetlacza) strony www przy użyciu HTML, CSS oraz JavaScript.
-            Dbam o ich nowoczesny i atrakcyjny design, zapewniając jednocześnie
-            odpowiedni UX (strony przyjazde dla użytkownika) oraz optymalizację pod kątem SEO.
-          </p>
-        </div>
-        <div class="services-type">
-          <div class="services-type-icon"><img src="img/wordpress-black.png" alt="znak stron w wordpress"></div>
-          <h3>CMS Wordpress</h3>
-          <p>Klientom oczekującym molżiwości samodzielnej edycji treści proponuję
-            strony bazujące na CMS Wordpress, z intuicyjnym panelem administracyjnym. W zaleności od
-            potrzeb i budżetu klienta tworzę motyw spersonalizowany lub opieram się na gotowym.</p>
-        </div>
-        <div class="services-type">
-          <div class="services-type-icon"><img src="img/psd-to-html-black.png" alt="plik PSD"></div>
-          <h3>PSD2HTML</h3>
-          <p>Masz już projekt przygotowany przez grafika i szukasz programisty, który Ci go zakoduje? Znalazłeś!
-            Zamienię Twój projekt na czysty i przejrzysty kod, a gotową stronę umieszczę na wybranym
-            hostingu.</p>
-        </div>
-        <div class="services-type">
-          <div class="services-type-icon"><img src="img/administration-black.png" alt="znak administrowania stroną">
+          <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="1500" class="services-type">
+            <div class="services-type-icon"><img src="img/wordpress-black.png" alt="znak stron w wordpress"></div>
+            <h3>CMS Wordpress</h3>
+            <p>Klientom oczekującym molżiwości samodzielnej edycji treści proponuję
+              strony bazujące na CMS Wordpress, z intuicyjnym panelem administracyjnym. W zaleności od
+              potrzeb i budżetu klienta tworzę motyw spersonalizowany lub opieram się na gotowym.</p>
           </div>
-          <h3>Administracja</h3>
-          <p>Proponuję Ci stałą opiekę
-            nad
-            stroną, w tym wszelkie aktualizacje, backup i wprowadzanie zmian, a Ty zaoszczędzony czas możesz
-            przeznaczyć na
-            prowadzenie biznesu.</p>
+          <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1500" class="services-type">
+            <div class="services-type-icon"><img src="img/psd-to-html-black.png" alt="plik PSD"></div>
+            <h3>PSD2HTML</h3>
+            <p>Masz już projekt przygotowany przez grafika i szukasz programisty, który Ci go zakoduje? Znalazłeś!
+              Zamienię Twój projekt na czysty i przejrzysty kod, a gotową stronę umieszczę na wybranym
+              hostingu.</p>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500" class="services-type">
+            <div class="services-type-icon"><img src="img/administration-black.png" alt="znak administrowania stroną">
+            </div>
+            <h3>Administracja</h3>
+            <p>Proponuję Ci stałą opiekę
+              nad
+              stroną, w tym wszelkie aktualizacje, backup i wprowadzanie zmian, a Ty zaoszczędzony czas możesz
+              przeznaczyć na
+              prowadzenie biznesu.</p>
+          </div>
         </div>
       </div>
     </section>
-
 
     <section class="gallery" id="work">
-      <div class="gallery-separator"></div>
-      <h2 class="gallery-title">portfolio</h2>
-      <div class="gallery-content">
-        <div class="gallery-content-www">
-          <img src="img/portfolio_mockup1.jpg" alt="miniatura zdjęcia strony wykonanej przez Frona">
-          <div class="gallery-content-desc">
-            <h3>One page - HTML, CSS, JS</h3>
-            <button class="img1">zobacz</button>
+      <h2 data-aos="fade-in" data-aos-delay="1500" class="gallery-title">portfolio</h2>
+      <div data-aos="fade-left" class="gallery-separator"></div>
+      <div class="wrapper">
+        <div class="gallery-content">
+          <div data-aos="fade" data-aos-delay="1500" data-aos-duration="500" class="gallery-content-www">
+            <img src="img/portfolio_mockup1.jpg" alt="miniatura zdjęcia strony wykonanej przez Frona">
+            <div class="gallery-content-desc">
+              <h3>One page - HTML, CSS, JS</h3>
+              <button class="img1">zobacz</button>
+            </div>
+          </div>
+          <div data-aos="fade" data-aos-delay="2000" data-aos-duration="500" class="gallery-content-www">
+            <img src="img/portfolio_mockup2.png" alt="miniatura zdjęcia strony wykonanej przez Frona">
+
+            <div class="gallery-content-desc">
+              <h3>Multipage - CMS Wordpress</h3>
+              <button class="img2">zobacz</button>
+            </div>
+          </div>
+          <div data-aos="fade" data-aos-delay="2500" data-aos-duration="500" class="gallery-content-www">
+            <img class="img3" src="img/portfolio_mockup3.jpg" alt="miniatura zdjęcia strony wykonanej przez Frona">
+
+            <div class=" gallery-content-desc">
+              <h3>Landing page - CMS Wordpress</h3>
+              <button class="img3">zobacz</button>
+            </div>
           </div>
         </div>
-        <div class="gallery-content-www">
-          <img src="img/portfolio_mockup2.png" alt="miniatura zdjęcia strony wykonanej przez Frona">
-
-          <div class="gallery-content-desc">
-            <h3>Multipage - CMS Wordpress</h3>
-            <button class="img2">zobacz</button>
-          </div>
+        <div class="modal-img1 modal-img">
+          <img src="img/projekt1.png" alt="zrzut całej strony">
+          <span class="hide">x</span>
         </div>
-        <div class="gallery-content-www">
-          <img class="img3" src="img/portfolio_mockup3.jpg" alt="miniatura zdjęcia strony wykonanej przez Frona">
-
-          <div class=" gallery-content-desc">
-            <h3>Landing page - CMS Wordpress</h3>
-            <button class="img3">zobacz</button>
-          </div>
+        <div class="modal-img2 modal-img">
+          <img src="img/projekt2.2.png " alt="zrzut całej strony">
+          <a href="http://teletechnika.e-visioners.pl/">http://teletechnika.e-visioners.pl/</a>
+          <span class="hide">x</span>
+        </div>
+        <div class="modal-img3 modal-img">
+          <img src="img/projekt3.png" alt="zrzut całej strony">
+          <a href="http://sebastianszczepankowski.pl/">http://sebastianszczepankowski.pl/</a>
+          <span class="hide">x</span>
         </div>
       </div>
-      <div class="modal-img1 modal-img">
-        <img src="img/projekt1.png" alt="zrzut całej strony">
-        <span class="hide">x</span>
-      </div>
-      <div class="modal-img2 modal-img">
-        <img src="img/projekt2.2.png " alt="zrzut całej strony">
-        <a href="http://teletechnika.e-visioners.pl/">http://teletechnika.e-visioners.pl/</a>
-        <span class="hide">x</span>
-      </div>
-      <div class="modal-img3 modal-img">
-        <img src="img/projekt3.png" alt="zrzut całej strony">
-        <a href="http://sebastianszczepankowski.pl/">http://sebastianszczepankowski.pl/</a>
-        <span class="hide">x</span>
-      </div>
-
     </section>
 
-
+    <section class="process" id="process">
+      <h2 data-aos="fade" data-aos-delay="500" data-aos-duration="1000" class="process-title">Proces</h2>
+      <div data-aos="fade-right" class="process-separator"> </div>
+      <div class="wrapper">
+        <ul class="process__blocks">
+          <li class="process__element">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"><img src="img/contact.png"></div>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">Kontakt z klientem</h3>
+          </li>
+          <li class="process__element">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800"><img src="img/research.png"></div>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">Research</h3>
+          </li>
+          <li class="process__element">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><img src="img/design.png"></div>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1100">Projekt (opcjonalnie)</h3>
+          </li>
+          <li class="process__element">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><img src="img/coding.png"></div>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1300">Kodowanie</h3>
+          </li>
+          <li class="process__element">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><img src="img/implementation.png">
+            </div>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">Testy i implementacja</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="about" id="about">
-      <div class="about-separator"> </div>
-      <h2 class="about-title">o mnie</h2>
-
-      <div class="about-content">
-        <div class="about-content-img">
-          <img src="img/me-3.png" alt="Zdjęcie Moniki Front-end developera">
+      <h2 data-aos="fade" data-aos-delay="1000" class="about-title">o mnie</h2>
+      <div data-aos="fade-left" data-aos-duration="1000" class="about-separator"> </div>
+      <div class="wrapper">
+        <div class="about-content">
+          <div data-aos="fade" data-aos-duration="1000" data-aos-delay="700" class="about-content-img">
+            <img src="img/me-3.png" alt="Zdjęcie Moniki Front-end developera">
+          </div>
+          <p data-aos="fade" data-aos-duration="1000" data-aos-delay="700" class="about-content-desc">Cześć, mam na imię
+            Monika i jestem front-end developerem freelancerem. Tworzę
+            strony dopasowane do oczekiwań, potrzeb i budżetów moich klientów. Początek współpracy jest więc dla mnie
+            czasem na zbudowanie relacji opartej na efektywnej komunikacji i wzajemnym zaufaniu.</p>
+          <p data-aos="fade" data-aos-duration="1000" data-aos-delay="800" class="about-content-desc">Jestem
+            perfekcjonistką i wierzę, że nigdy nie jest się wystarczająco dobrym,
+            dlatego nie przestaję się
+            uczyć i rozwijać. Swoje projekty realizuję z pasją i pełnym zaangażowaniem.</p>
+          <p data-aos="fade" data-aos-duration="1000" data-aos-delay="900" class="about-content-desc">Jeśli szukasz
+            kogoś, kto wykona dla Ciebie stronę w uzgodnionym terminie, w
+            uczciwej cenie,
+            biorąc pod uwagę Twoje wyobrażenia i przy okazji włoży w to serce, to właśnie znalazłeś.
+            Napisz do mnie lub zadzwoń - wspólnie stworzymy Twój pozytywny wizerunek w sieci.
+          </p>
         </div>
-        <p class="about-content-desc">Cześć, mam na imię Monika i jestem front-end developerem freelancerem. Tworzę
-          strony dopasowane do
-          oczekiwań, potrzeb i budżetów moich klientów. Początek współpracy jest więc dla mnie czasem na zbudowanie
-          relacji
-          opartej na
-          efektywnej komunikacji i wzajemnym zaufaniu. Jestem perfekcjonistką i wierzę, że nigdy nie jest się
-          wystarczająco dobrym, dlatego nie przestaję się uczyć i rozwijać. Swoje projekty realizuję z pasją i pełnym
-          zaangażowaniem. Jeśli szukasz kogoś, kto wykona dla Ciebie stronę w uzgodnionym terminie, w uczciwej cenie,
-          biorąc pod uwagę Twoje wyobrażenia i przy okazji włoży w to serce, to właśnie znalazłeś.
-          Napisz do mnie lub zadzwoń - wspólnie stworzymy Twój pozytywny wizerunek w sieci.
-        </p>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <h2 class="contact-title">Pomówmy o Twoim projekcie!</h2>
+      </div>
+      <h2 data-aos="fade" data-aos-duration="1000" class="contact-title">Pomówmy o Twoim projekcie!</h2>
       <div class="contact-content">
         <div id="send_form_status"></div>
-        <form method="post" action="send_form.php" class="contact-form" id="contact-form">
+        <form data-aos="fade" data-aos-duration="1000" data-aos-delay="700" method="post" action="send_form.php"
+          class="contact-form" id="contact-form">
           <input type="text" name="name" id="name" placeholder="Twoje imię">
           <input type="text" name="email" id="email" placeholder="Email">
           <textarea name="message" id="message" placeholder="Twoja wiadomość"></textarea>
           <label for="mailing" class="mailing">
-            <input type="checkbox" value="checked" name="mailing" id="mailing">Wyrażam zgodę na
+            <input type="checkbox" name="check" value="checked" id="check">Wyrażam zgodę na
             przetwarzanie moich
             danych osobowych w
             celu odpowiedzi na otrzymane zapytanie lub przygotowania oferty zgodnie z Ustawą o Ochronie Danych Osobowych
@@ -212,9 +255,11 @@
             Dane osobowe nie będą przekazywane podmiotom trzecim bez uzyskania odrębnej zgody. Przysługuje Pani/Panu
             prawo dostępu do swoich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a
             także do wniesienia skargi do organu nadzorującego</label>
-          <button type="submit" name="submit" id="sendBtn">Wyślij</button>
+          <span class='error'><?php echo $check_error ?></span>
+          <button data-aos="fade" data-aos-duration="1000" data-aos-delay="900" type="submit" name="submit"
+            id="sendBtn"></button>
         </form>
-        <div class="contact-socials">
+        <div data-aos="fade" data-aos-duration="1000" data-aos-delay="800" class="contact-socials">
           <div class="social"><img src="img/email.png" alt="email"><a
               href="mailto:kontakt@fronaweb.pl">kontakt@fronaweb.pl</a></div>
           <div class="social"><img src="img/mobile.png" alt="mobile"><span>+48 734 164 767</span></div>
@@ -223,14 +268,18 @@
 
       </div>
 
-
+      </div>
     </section>
 
     <footer>&copy;2019 Fronaweb.pl</footer>
   </main>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

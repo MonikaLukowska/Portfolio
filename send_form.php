@@ -8,6 +8,17 @@
         $subject = 'Message from fronaweb.pl';
         $body ="From: $name\n E-Mail: $email\n Message:\n $message";
 
+//checkbox validation
+if(empty($_POST['check']))
+{
+    $checkbox_error = "Proszę odhacz zgodę na przetwarzanie Twoich danych";
+    $error=true;
+}
+else
+{
+    $checkbox = $_POST['check'];
+}
+
 
 // If there are no errors, send the email
 if (!$errName && !$errEmail && !$errMessage) {
