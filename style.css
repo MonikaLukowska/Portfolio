@@ -35,6 +35,45 @@
   }
 }
 
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.spinner:after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: var(--mainBlue);
+  border-radius: 50%;
+  z-index: 99;
+  animation: changeColor 3s linear infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background: var(--mainBlue);
+  }
+
+  50% {
+    background: var(--mainGreen);
+  }
+
+  100% {
+    background: var(--mainBlue);
+  }
+}
+
 button {
   background-color: transparent;
 }
@@ -179,6 +218,8 @@ header {
   line-height: 40px;
   transition: .3s linear;
   z-index: 12;
+  border: none;
+  outline: none;
 }
 
 aside {
@@ -352,23 +393,23 @@ aside.show {
 }
 
 .header-bottom-features li:nth-child(1) {
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .header-bottom-features li:nth-child(2) {
-  transition: 1s 0.5s;
+  transition: 1.5s 0.5s;
 }
 
 .header-bottom-features li:nth-child(3) {
-  transition: 1s 1s;
+  transition: 1.5s 1s;
 }
 
 .header-bottom-features li:nth-child(4) {
-  transition: 1s 1.5s;
+  transition: 1.5s 1.5s;
 }
 
 .header-bottom-features li:nth-child(5) {
-  transition: 1s 2s;
+  transition: 1.5s 2s;
 }
 
 .header-bottom-features li:nth-child(6) {
@@ -479,6 +520,7 @@ a.header-bottom-btn::before {
   bottom: 12%;
   left: 70%;
   transition: all 0.7s ease;
+  padding-top: 25px;
   flex-basis: 40%;
   opacity: 0;
 }
@@ -604,7 +646,7 @@ a.header-bottom-btn::before {
 
   .header-bottom-title {
     line-height: 1.4;
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   .cursor {
@@ -726,8 +768,8 @@ a.header-bottom-btn::before {
 
 
   .header-bottom-mobile {
-    left: 65%;
-    bottom: 25%;
+    left: 75%;
+    bottom: 18%;
     transform: scale(1.7)
   }
 
@@ -1027,25 +1069,26 @@ a.header-bottom-btn::before {
 
 }
 
-.modal-img1.active {
+.modal-img.active {
   display: block;
 }
 
-.modal-img2.active {
-  display: block;
-}
 
-.modal-img3.active {
-  display: block;
-}
-
-.modal-img img {
+.modal-img>div {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 110vw;
   width: 90vw;
+}
+
+.modal-img div>img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  max-height: 100%;
+
 }
 
 .modal-img a {
@@ -1061,19 +1104,23 @@ a.header-bottom-btn::before {
 .hide {
   margin-left: 95%;
   margin-top: 5%;
-  font-family: arial;
   font-size: 30px;
   color: #ffe;
-  text-align: center;
+  text-align: right;
   cursor: pointer;
 
 }
 
+.hide>i {
+
+  display: inline-block;
+}
+
 @media (min-width: 600px) {
   .gallery-content-www {
-    flex-basis: 33.3333%;
-    height: 33.3vw;
-    max-height: 480px;
+    flex-basis: 50%;
+    height: 50vw;
+
     justify-content: space-around;
   }
 
@@ -1097,7 +1144,7 @@ a.header-bottom-btn::before {
 
 
 
-  .modal-img img {
+  .modal-img>div {
     position: absolute;
     top: 50%;
     left: 50%;

@@ -1,3 +1,16 @@
+//spinner
+const spinner = document.querySelector('.spinner');
+
+
+const hideSpinner = () =>{
+    spinner.style.height = 0;
+    spinner.style.width = 0;
+    console.log(spinner);
+
+};
+
+window.addEventListener('load', () => hideSpinner());
+
 //jquery//
 
 //hamburger menu
@@ -16,34 +29,41 @@ $(".header-top-nav_item li a").on("click", function(){
 //gallery modal
 
 $('.img1').on('click', function () {
-    console.log('dziala');
+   
     $('.modal-img1').addClass('active')
 })
 $('.img2').on('click', function () {
-    console.log('dziala');
+    
     $('.modal-img2').addClass('active')
 })
 $('.img3').on('click', function () {
-    console.log('dziala');
+  
     $('.modal-img3').addClass('active')
 })
+$('.img4').on('click', function () {
+ 
+    $('.modal-img4').addClass('active')
+})
+$('.img5').on('click', function () {
+ 
+    $('.modal-img5').addClass('active')
+})
 $('.hide').on('click', function () {
-    console.log('dziala');
+   
     $('.modal-img').removeClass('active');
 })
 
 
-//plain JS
+//JS
 
 //typing effect
 
-  //text
 const title = document.querySelector('.title');
 const content = "Jaka będzie Twoja strona?";
 const cursor = document.querySelector('.cursor');
 
 let indexText = 0;
-const duration = 50;
+const duration = 120;
 
 const addLetter = () => {
     title.textContent += content[indexText];
@@ -70,15 +90,15 @@ const fadeIn = () => {
     for (let i = 0; i < features.length; i++){
         setTimeout( () => {
             features[i].classList.add('fade');
-        }, 2500)
+        }, 3000)
     };
         setTimeout( () => {
             btn.classList.add('fade');
-        }, 4500);
+        }, 5000);
 
         setTimeout( () => {
             mobile.classList.add('fade');
-        },5000)
+        },6000)
 
 }
 

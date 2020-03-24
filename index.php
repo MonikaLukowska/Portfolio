@@ -20,13 +20,19 @@
                             $Msg = "";
                             if(isset($_GET['error']))
                             {
-                                $Msg = " Please Fill in the Blanks ";
+                                $Msg = "Coś poszło nietak. Spróbuj jeszcze raz.";
                                 echo '<div class="alert alert-danger">'.$Msg.'</div>';
                             }
+                            if(isset($_GET['validation']))
+                            {
+                                $Msg = "Wszystie pola są wymagane. Twoja wiadomość nie została wysłana";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
+                        
  
                             if(isset($_GET['success']))
                             {
-                                $Msg = " Your Message Has Been Sent ";
+                                $Msg = " Twoja wiadomość została wysłana. ";
                                 echo '<div class="alert alert-success">'.$Msg.'</div>';
                             }
                         
