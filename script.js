@@ -5,54 +5,43 @@ const spinner = document.querySelector('.spinner');
 const hideSpinner = () =>{
     spinner.style.height = 0;
     spinner.style.width = 0;
-    console.log(spinner);
 
 };
 
 window.addEventListener('load', () => hideSpinner());
 
-//jquery//
+
+
 
 //hamburger menu
-$(".header-top-nav-mobile").click( function(){
-    $("aside").toggleClass("show");
+document.querySelector('.header-top-nav-mobile').addEventListener('click', function(){
+    document.querySelector('aside').classList.toggle('show');
 })
 
-$(".header-top-burger").on("click", function () {
-    $(".fas, aside").toggleClass("show");
+document.querySelector('.header-top-burger').addEventListener('click', function () {
+    document.querySelector('aside').classList.toggle('show');
+    document.querySelector('.fas').classList.toggle('show');
 })
 
-$(".header-top-nav_item li a").on("click", function(){
-    $("aside").removeClass("show");
+document.querySelector('.header-top-nav_item a').addEventListener('click', function(){
+    document.querySelector('aside').classList.remove('show');
 })
 
 //gallery modal
 
-$('.img1').on('click', function () {
-   
-    $('.modal-img1').addClass('active')
-})
-$('.img2').on('click', function () {
-    
-    $('.modal-img2').addClass('active')
-})
-$('.img3').on('click', function () {
-  
-    $('.modal-img3').addClass('active')
-})
-$('.img4').on('click', function () {
- 
-    $('.modal-img4').addClass('active')
-})
-$('.img5').on('click', function () {
- 
-    $('.modal-img5').addClass('active')
-})
-$('.hide').on('click', function () {
-   
-    $('.modal-img').removeClass('active');
-})
+const modals = [...document.querySelectorAll('.modal-img')]
+const watchBtns = document.querySelectorAll('.watch');
+const hideBtns = document.querySelectorAll('.hide');
 
+
+
+watchBtns.forEach((btn,index) => btn.addEventListener('click', () => {
+    modals[index].classList.add('active');
+}))
+
+hideBtns.forEach((btn,index) => btn.addEventListener('click', () => {
+    modals[index].classList.remove('active');
+}))
 
 //JS
 
@@ -63,43 +52,54 @@ const content = "Jaka będzie Twoja strona?";
 const cursor = document.querySelector('.cursor');
 
 let indexText = 0;
-const duration = 120;
+const duration = 100;
+let index = function(){}
+
+const loadHero = () => {
+        index = setInterval(addLetter, duration);
+    }
+   
+
 
 const addLetter = () => {
     title.textContent += content[indexText];
-    indexText++;
-    if(indexText == content.length) clearInterval(index); 
-}
-console.log(cursor);
-const cursorFlash = () => {
- cursor.classList.toggle('active');
+    indexText++; 
+    if(indexText == content.length) {
+        clearInterval(index)
+    };     
 }
 
-const index = setInterval(addLetter, duration);
-setInterval(cursorFlash,500);
+
+
+
+const cursorFlash = () => {
+ cursor.classList.toggle('active');
+
+}
+setInterval(cursorFlash,500)
 
 //fadein
 
-const fadeIn = () => {
+async function fadeIn() {
     const features = document.querySelectorAll(".header-bottom-feature");
     const btn = document.querySelector('.header-bottom-btn');
     const mobile = document.querySelector('.header-bottom-mobile');
-  
-    
-   
+
     for (let i = 0; i < features.length; i++){
         setTimeout( () => {
             features[i].classList.add('fade');
-        }, 3000)
+        }, 2500)
     };
         setTimeout( () => {
             btn.classList.add('fade');
-        }, 5000);
+        }, 4000);
 
         setTimeout( () => {
             mobile.classList.add('fade');
-        },6000)
+        },4000)
 
 }
+ 
+window.addEventListener('load', loadHero);
+window.addEventListener('load', fadeIn)
 
- fadeIn()

@@ -1,2 +1,2 @@
 # My website
-My first coded site. Built as a Coderscamp first assignment. Still in progress - developed parallely with new skills acquireing.
+My first developed website. Initially built as a first Coderscamp assignment. Still in progress - improved with new skills acquireing.
