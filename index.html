@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900|Source+Sans+Pro:400,900&display=swap&subset=latin-ext"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="manifest" href="img/site.webmanifest">
@@ -82,7 +82,7 @@
                 <li class="header-bottom-feature">nowoczesna</li>
                 <li class="header-bottom-feature">atrakcyjna wizualnie</li>
               </ul>
-              <a class="header-bottom-btn" href="#contact">Wycena</a>
+              <a role="button" class="btn" href="#contact">Wycena</a>
             </div>
 
           </div>
@@ -99,7 +99,7 @@
       <div class="wrapper">
         <div class="services-content">
           <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500" class="services-type">
-            <div class="services-type-icon"><img src="img/html-css-js-black.png" alt="znak kodu html css JavaScript">
+            <div class="services-type-icon"><img aria-hidden="true" src="img/html-css-js-black.png" alt="">
             </div>
             <h3>Web design</h3>
             <p>Tworzę responsywne (reagujące na rozmiar wyświetlacza) strony www przy użyciu HTML, CSS oraz JavaScript.
@@ -108,21 +108,21 @@
             </p>
           </div>
           <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="1500" class="services-type">
-            <div class="services-type-icon"><img src="img/wordpress-black.png" alt="znak stron w wordpress"></div>
+            <div class="services-type-icon"><img aria-hidden="true" src="img/wordpress-black.png" alt=""></div>
             <h3>CMS Wordpress</h3>
             <p>Klientom oczekującym molżiwości samodzielnej edycji treści proponuję
               strony bazujące na CMS Wordpress, z intuicyjnym panelem administracyjnym. W zaleności od
               potrzeb i budżetu klienta tworzę motyw spersonalizowany lub opieram się na gotowym.</p>
           </div>
           <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1500" class="services-type">
-            <div class="services-type-icon"><img src="img/psd-to-html-black.png" alt="plik PSD"></div>
+            <div class="services-type-icon"><img aria-hidden="true" src="img/psd-to-html-black.png" alt=""></div>
             <h3>PSD2HTML</h3>
             <p>Masz już projekt przygotowany przez grafika i szukasz programisty, który Ci go zakoduje? Znalazłeś!
               Zamienię Twój projekt na czysty i przejrzysty kod, a gotową stronę umieszczę na wybranym
               hostingu.</p>
           </div>
           <div data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500" class="services-type">
-            <div class="services-type-icon"><img src="img/administration-black.png" alt="znak administrowania stroną">
+            <div class="services-type-icon"><img aria-hidden="true" src="img/administration-black.png" alt="">
             </div>
             <h3>Administracja</h3>
             <p>Proponuję Ci stałą opiekę
@@ -141,42 +141,47 @@
       <div class="wrapper">
         <div class="gallery-content">
           <div data-aos="fade-up" data-aos-duration="1000" class="gallery-content-www">
-            <div><img class="img" src="img/studiomb_mockap.png" alt="miniatura zdjęcia strony wykonanej przez Frona">
+            <div><img class="img" role="presentation" src="img/studiomb_mockap.png"
+                alt="mockap ze stroną wykonaną dla agencji eventowej Studio MB, pokazane na ekranie tableta">
             </div>
             <div class=" gallery-content-desc">
               <h3>Multipage - motyw autorski Wordpress</h3>
-              <button class="watch">zobacz</button>
+              <button role="button" class="watch">zobacz</button>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000" class="gallery-content-www">
-            <div><img class="img" src="img/pblogistyka.png" alt="miniatura zdjęcia strony wykonanej przez Frona">
+            <div><img class="img" src="img/pblogistyka.png"
+                alt="mockap ze stroną wykonaną dla PB Logistyka, pokazane na ekranie laptopa">
             </div>
             <div class=" gallery-content-desc">
-              <h3>Landing page - strona statyczna</h3>
-              <button class="watch">zobacz</button>
+              <h3>Onepage - strona statyczna</h3>
+              <button role="button" class="watch">zobacz</button>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000" class="gallery-content-www">
-            <img class="img" src="img/portfolio_mockup1.jpg" alt="miniatura zdjęcia strony wykonanej przez Frona">
+            <img class="img" src="img/portfolio_mockup1.jpg"
+              alt="zrzut ekranu ze stroną salonu piękności, zakodowane na potrzeby portfolio">
             <div class="gallery-content-desc">
-              <h3>One page - strona statyczna</h3>
-              <button class="watch">zobacz</button>
+              <h3>Onepage - strona statyczna</h3>
+              <button role="button" class="watch">zobacz</button>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000" class="gallery-content-www">
-            <img class="img" src="img/portfolio_mockup2.png" alt="miniatura zdjęcia strony wykonanej przez Frona">
+            <img class="img" src="img/portfolio_mockup2.png"
+              alt="zrzut ekranu strony wykonanej dla CD Teletechnika, pokazany w wymiarze ekranu tableta">
 
             <div class="gallery-content-desc">
               <h3>Multipage - CMS Wordpress, motyw z repozytorium</h3>
-              <button class="watch">zobacz</button>
+              <button role="button" class="watch">zobacz</button>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000" class="gallery-content-www">
-            <img class="img" src="img/portfolio_mockup3.jpg" alt="miniatura zdjęcia strony wykonanej przez Frona">
+            <img class="img" src="img/portfolio_mockup3.jpg"
+              alt="zrzut ze strony wykonanej dla Sebastiana Szczepankowskiego, w wymiarze ekranu mobilnego">
 
             <div class=" gallery-content-desc">
               <h3>Landing page - CMS Wordpress, motyw z repozytorium</h3>
-              <button class="watch">zobacz</button>
+              <button role="button" class="watch">zobacz</button>
             </div>
           </div>
         </div>
@@ -213,23 +218,28 @@
       <div class="wrapper">
         <ul class="process__blocks">
           <li class="process__element">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"><img src="img/contact.png"></div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"><img aria-hidden="true"
+                src="img/contact.png"></div>
             <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">Kontakt z klientem</h3>
           </li>
           <li class="process__element">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800"><img src="img/research.png"></div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800"><img aria-hidden="true"
+                src="img/research.png"></div>
             <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">Research</h3>
           </li>
           <li class="process__element">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><img src="img/design.png"></div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><img aria-hidden="true"
+                src="img/design.png"></div>
             <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1100">Projekt (opcjonalnie)</h3>
           </li>
           <li class="process__element">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><img src="img/coding.png"></div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><img aria-hidden="true"
+                src="img/coding.png"></div>
             <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1300">Kodowanie</h3>
           </li>
           <li class="process__element">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><img src="img/implementation.png">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><img aria-hidden="true"
+                src="img/implementation.png">
             </div>
             <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">Testy i implementacja</h3>
           </li>
@@ -242,7 +252,7 @@
       <div class="wrapper">
         <div class="about-content">
           <div data-aos="fade" data-aos-duration="1000" data-aos-delay="700" class="about-content-img">
-            <img src="img/me-3.png" alt="Zdjęcie Moniki Front-end developera">
+            <img src="img/me-3.png" alt="Moje zdjęcie">
           </div>
           <p data-aos="fade" data-aos-duration="1000" data-aos-delay="700" class="about-content-desc">Cześć, mam na imię
             Monika i jestem front-end developerem freelancerem. Tworzę
@@ -270,11 +280,15 @@
         <div id="send_form_status"></div>
         <form data-aos="fade" data-aos-duration="1000" data-aos-delay="700" method="post" action="send_form.php"
           class="contact-form" id="contact-form">
-          <input type="text" name="name" id="name" placeholder="Twoje imię">
-          <input type="text" name="email" id="email" placeholder="Email">
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Twoje imię" required aria-invalid="false">
+          <label for="email"></label>
+          <input type="text" name="email" id="email" placeholder="Email" required aria-invalid="false">
+          <label for="message"></label>
           <textarea name="message" id="message" placeholder="Twoja wiadomość"></textarea>
           <label for="mailing" class="mailing">
-            <input type="checkbox" name="check" value="checked" id="check">Wyrażam zgodę na
+            <input type="checkbox" name="check" value="checked" id="check" required aria-invalid="false">Wyrażam zgodę
+            na
             przetwarzanie moich
             danych osobowych w
             celu odpowiedzi na otrzymane zapytanie lub przygotowania oferty zgodnie z Ustawą o Ochronie Danych Osobowych
@@ -285,8 +299,8 @@
             prawo dostępu do swoich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a
             także do wniesienia skargi do organu nadzorującego</label>
           <span class='error'><?php echo $check_error ?></span>
-          <button data-aos="fade" data-aos-duration="1000" data-aos-delay="900" type="submit" name="submit"
-            id="sendBtn"></button>
+          <button data-aos="fade" data-aos-duration="1000" data-aos-delay="900" type="submit" name="submit" id="sendBtn"
+            class="btn btn--send">Wyślij</button>
         </form>
         <div data-aos="fade" data-aos-duration="1000" data-aos-delay="800" class="contact-socials">
           <div class="social"><img src="img/email.png" alt="email"><a

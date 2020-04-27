@@ -53,6 +53,7 @@ const cursor = document.querySelector('.cursor');
 
 let indexText = 0;
 const duration = 100;
+const delay = content.length * duration 
 let index = function(){}
 
 const loadHero = () => {
@@ -80,26 +81,26 @@ setInterval(cursorFlash,500)
 
 //fadein
 
-async function fadeIn() {
+function fadeIn() {
     const features = document.querySelectorAll(".header-bottom-feature");
-    const btn = document.querySelector('.header-bottom-btn');
+    const btn = document.querySelector('.btn');
     const mobile = document.querySelector('.header-bottom-mobile');
 
     for (let i = 0; i < features.length; i++){
         setTimeout( () => {
             features[i].classList.add('fade');
-        }, 2500)
+        }, delay)
     };
         setTimeout( () => {
             btn.classList.add('fade');
-        }, 4000);
+        }, delay + 1500);
 
         setTimeout( () => {
             mobile.classList.add('fade');
-        },4000)
+        },delay + 2000)
 
 }
- 
+
 window.addEventListener('load', loadHero);
 window.addEventListener('load', fadeIn)
 

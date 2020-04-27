@@ -9,6 +9,7 @@
 :root {
 
   font-family: 'Montserrat', sans-serif;
+  font-display: fallback;
   color: var(--black);
   font-size: 0.9rem;
   line-height: 2;
@@ -74,16 +75,10 @@
   }
 }
 
-button {
-  background-color: transparent;
-}
-
 
 h2 {
 
   font-size: 2.9rem;
-
-
 
 }
 
@@ -97,6 +92,63 @@ h3 {
 a:any-link {
   color: var(--mainPurple);
 
+}
+
+button {
+  background-color: transparent;
+}
+
+.btn {
+  position: relative;
+  margin: 20px 0 0 0;
+  width: 170px;
+  height: 70px;
+  line-height: 40px;
+  background-color: var(--mainGreen);
+  color: var(--mainBlue);
+  font-size: 0.89em;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+a.btn {
+  color: var(--mainBlue);
+  text-decoration: none;
+}
+
+a.btn:hover::before,
+button.btn:hover::before {
+  transform: translateY(40%);
+}
+
+.btn.fade {
+  opacity: 1
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -10px;
+  left: 10px;
+  border: 2px solid var(--mainGreen);
+  background-color: var(--mainBlue);
+  transition: all 0.3s ease-in;
+  z-index: -1;
+}
+
+.btn--send {
+  border-style: none;
+  width: 50%;
+  margin-left: 25%;
+  cursor: pointer;
+  opacity: 1;
 }
 
 
@@ -358,11 +410,13 @@ aside.show {
 }
 
 .header-bottom-flex {
+  position: relative;
   margin-left: 40px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 1;
 }
 
 
@@ -424,52 +478,6 @@ aside.show {
 
 }
 
-a.header-bottom-btn {
-  position: relative;
-  display: inline-block;
-  margin: 20px 0 0 0;
-  width: 170px;
-  height: 40px;
-  padding: 0;
-  flex-grow: 1;
-  font-size: 0.89em;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1.2px;
-  line-height: 40px;
-  vertical-align: middle;
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--mainBlue);
-  flex-shrink: 1;
-  background-color: var(--mainGreen);
-  transition: all 0.5s ease-in;
-  z-index: 10;
-  opacity: 0;
-}
-
-a.header-bottom-btn.fade {
-  opacity: 1
-}
-
-a.header-bottom-btn:hover {
-  background-color: var(--mainBlue);
-  border: 2px solid var(--mainGreen);
-  color: var(--mainGreen);
-}
-
-a.header-bottom-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: -10px;
-  left: 10px;
-  background-color: rgba(54, 224, 155, 0.4);
-  z-index: -1;
-}
 
 .header-bottom-triangle {
   position: absolute;
@@ -594,7 +602,8 @@ a.header-bottom-btn::before {
 
 
 
-  a.header-bottom-btn {
+  a.btn,
+  .btn {
     font-size: 1rem;
 
   }
@@ -618,7 +627,8 @@ a.header-bottom-btn::before {
   }
 
 
-  a.header-bottom-btn {
+  a.btn,
+  .btn {
     font-size: 1.2rem;
     width: 190px;
     height: 50px;
@@ -665,7 +675,8 @@ a.header-bottom-btn::before {
   }
 
 
-  a.header-bottom-btn {
+  a.btn,
+  .btn {
     font-size: 1.4rem;
     width: 320px;
     height: 70px;
@@ -707,7 +718,8 @@ a.header-bottom-btn::before {
   }
 
 
-  a.header-bottom-btn {
+  a.btn,
+  .btn {
     font-size: 0.9rem;
     width: 240px;
     height: 50px;
@@ -758,7 +770,8 @@ a.header-bottom-btn::before {
     font-size: 1.2rem;
   }
 
-  a.header-bottom-btn {
+  a.btn,
+  .btn {
     width: 300px;
     height: 60px;
     line-height: 60px;
@@ -1397,6 +1410,8 @@ a.header-bottom-btn::before {
 }
 
 .contact-form {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -1405,7 +1420,6 @@ a.header-bottom-btn::before {
 }
 
 .contact input,
-.contact button,
 .contact textarea {
   margin-left: 10%;
   width: 80%;
@@ -1444,39 +1458,6 @@ a.header-bottom-btn::before {
   height: 120px
 }
 
-.contact button {
-  position: relative;
-  width: 50%;
-  margin-left: 25%;
-  height: 70px;
-  line-height: 40px;
-  background-color: var(--mainBlue);
-  color: var(--mainGreen);
-  border: 2px solid var(--mainGreen);
-  font-size: 0.89em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  z-index: 100;
-
-}
-
-.contact button::before {
-  content: "Wyślij";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 10px;
-  left: -10px;
-  background-color: rgb(54, 224, 155);
-  color: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  transition: all 0.5s ease-in;
-
-}
 
 .contact-socials {
   display: flex;
@@ -1511,10 +1492,6 @@ a {
     justify-content: center;
     align-self: flex-start;
 
-  }
-
-  .contact button:before {
-    font-size: 1rem;
   }
 }
 
@@ -1571,23 +1548,6 @@ a {
 
   .contact textarea {
     height: 180px;
-
-  }
-
-  .contact button {
-
-    line-height: 50px;
-    transition: .3s;
-    cursor: pointer;
-
-  }
-
-  .contact button:before {
-    font-size: 1.4rem;
-  }
-
-  .contact button:hover:before {
-    top: -20%;
 
   }
 
